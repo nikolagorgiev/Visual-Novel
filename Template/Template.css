@@ -1,5 +1,131 @@
+html, body {
+  width: 100vw;
+  height: 100vh;
+  margin: 0pc;
+  padding: 0px;
+  background-color: rgb(0, 0, 0);
+  overflow: hidden;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+} 
+
 scene {
-  width: 1280px;
-  height: 720px;
+  width: 1920px;
+  height: 1080px;
   display: inline-block;
 }
+
+canvas {
+  width: auto;
+  height: 100%;
+}
+
+dialog[class="gameMenu"] {
+  border-radius: 10px;
+  position: fixed;
+  width: auto;
+  height: auto;
+  padding: 3px;
+  display: table;
+  background-color: rgba(78, 44, 11, 0.582);
+  bottom: 95%;
+  left: 0%;
+}
+
+dialog[class="gameMenu"] > button {
+  border-radius: 8px;
+  background-color: rgba(235, 183, 125, 0.699);
+  bottom: 175px;
+  left: 850px;
+}
+
+speech{
+  position: absolute;
+  top: 50px;
+  left: 50%;
+  transform:translateX(-50%);
+  color: rgb(0, 0, 0);
+  background-color: rgba(238, 229, 200, 0.842);
+  font-size: min(3vw, 30px);
+  height: 10vh;
+  width: 80%;
+  border: 4px solid rgb(46, 43, 43);
+}
+
+speech > name {
+  position: absolute;
+  bottom: 105%;
+  border: 4px solid rgb(46, 43, 43);
+  background-color: rgba(238, 229, 200, 0.842);
+}
+
+meter::-webkit-meter-optimum-value{
+  background-color: rgb(184, 0, 0);
+}
+
+dialog.credits {
+  color: white;
+  background-image: none;
+  background-color: #1c1c1c;
+}
+
+button {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+ul {
+  display: flex;
+  flex-direction: row;
+  align-items: left;
+  color: rgba(0, 0, 0, 0.74);
+}
+
+li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 300px;
+  height: 200px;
+  margin: 10px;
+  border: 4px solid rgba(173, 153, 109, 0.904);
+  background-color: rgba(0, 0, 0, 0);
+}
+
+li>name {
+  padding-top: 15px;
+  font-weight: 700;
+}
+
+li>description {
+  width: 280px;
+  text-align: center;
+  font-size: 12px;
+}
+
+li>img {
+  padding-top: 12px;
+  height: 100px;
+  width: auto;
+}
+
+
+.decision {
+  border-radius: 20px;
+  background-color: rgba(235, 183, 125, 0.699);
+}
+
+input {
+  height: 3vh;
+}
+
+
